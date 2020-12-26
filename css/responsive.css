@@ -1,0 +1,218 @@
+@charset "utf-8";
+
+
+/*----------responsive対応↓----------*/
+
+/*---タブレット以下↓---*/
+
+@media (max-width:767px){
+  
+  /*---全体設定↓---*/
+  
+  body{
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+  
+  
+  /*---ヘッダー↓---*/
+  
+  .logoWrapper{
+    height: 200px;
+  }
+  
+  .logoName{
+    top: 0;
+    left: -30px;
+    font-size: 2.5rem;
+  }
+
+  .logoTitle{
+    font-size: 5.6rem;
+  }
+
+  .logoDesc{
+    font-size: 1.1rem;
+  }
+  
+  
+  /*---ナビ↓---*/
+  
+  .topNav ul li{
+    font-size: 1.4rem;
+    padding: 0 10px;
+  }
+  
+  .topNav ul li a:hover{
+    opacity: 1;
+  }
+  
+  
+  
+  /*---中央↓---*/
+  
+  .contents{
+    padding: 40px 0;
+  }
+  
+  section{
+    padding: 30px 15px;
+  }
+  
+  .worksBoxText{
+    margin-bottom: 10px;
+  }
+  
+  .sectionTitle{
+    font-size: 3.6rem;
+  }
+  
+  
+  /*---works↓---*/
+
+  .worksBoxInner{
+    width: 100%;
+    display: block;
+    justify-content: flex-start;
+  }
+
+  .workBoxLeft{
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+  
+  .workBoxLeft img{
+    margin: 0 auto;
+  }
+
+  .workBoxRight{
+    width: 100%;
+  }
+  
+  
+  /*---history↓---*/
+  
+  .historyBoxInner{
+    flex-wrap: wrap;
+    padding: 20px 0;
+  }
+  
+  .historyBox{
+    width: 48%;
+  }
+  
+  .historyTitle{
+    font-size: 1.2rem;
+  }
+  
+  .historyInfo{
+    font-size: 1.1rem;
+  }
+  
+  
+  /*---about↓---*/
+  
+  .aboutBoxInner{
+    width: 100%;
+    display: block;
+    justify-content: flex-start;
+  }
+  
+  .aboutBoxLeft{
+    width: 50%;
+    margin: 0 auto 20px;
+  }
+  
+  .aboutBoxRight{
+    width: 100%;
+  }
+  
+  
+  /*---skill↓---*/
+  
+  .skillBoxInner{
+    width: 100%;
+  }
+  
+  .skillBox1Left{
+    flex-basis: 45px;
+  }
+  
+  .skillBox1Left img{
+    width: 45px;
+  }
+  
+  .skillBox1Right{
+    flex-basis: calc(100% - 45px - 10px);
+  }
+  
+  .skillBoxInnerInner{
+    display: block;
+    justify-content: flex-start;
+  }
+  
+  .skillBoxInnerLeft,
+  .skillBoxInnerRight{
+    width: 100%;
+  }
+  
+  .skillBoxInnerLeft{
+    margin: 0 0 50px 0;
+  }
+  
+  .skillStatus{
+    font-size: 1.5rem;
+    height: 15px;
+  }
+  
+  .skillStatus::before{
+    height: 15px;
+    line-height: 15px;
+  }
+  
+  .skillStatus::after{
+    width: 60px;
+    height: 15px;
+    line-height: 15px;
+  }
+  
+  .length::after{
+    width: 45px;
+  }
+  
+  
+  /*---contact↓---*/
+  
+  .contactList{
+    width: 100%;
+  }
+  
+  .contactList li{
+    flex-basis: 30%;
+  }
+  
+  .contactList img{
+    width: 30px;
+  }
+  
+  .contactList span{
+    font-size: 1.2rem;
+  }
+  
+  .contactBoxInner{
+    padding: 20px 0;
+  }
+  
+  
+  /*----------フッター↓----------*/
+  
+  .footerInner{
+    padding: 20px 0;
+  }
+  
+  .footerNav ul li{
+    font-size: 1.0rem;
+    padding: 0 10px;
+    margin-bottom: 5px;
+  }
+}

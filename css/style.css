@@ -1,0 +1,423 @@
+@charset "utf-8";
+
+
+/*---基本設定↓---*/
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック Medium", "Yu Gothic Medium", 游ゴシック体, YuGothic, メイリオ, Meiryo, Osaka, "MS Pゴシック", "MS PGothic", sans-serif;
+  font-size: 1.5rem;
+  color: #333;
+  line-height: 1.8;
+  letter-spacing: 0.8px;
+}
+
+p{
+  margin: 0;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration-line: none;
+  color: #1ca9e3;
+}
+
+figure{
+  margin: 0;
+}
+
+
+
+/*----------レイアウト↓----------*/
+
+.wrapper{
+  width: 100%;
+  background: #f3f3f3;
+}
+
+
+/*----------ヘッダー↓----------*/
+
+.logoWrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 380px;
+}
+
+.logoName{
+  font-family: 'Yesteryear', cursive;
+  display: block;
+  position: relative;
+  top: -8px;
+  left: -60px;
+  font-size: 3.6rem;
+  color: #d59fea;
+  transform: rotate(-10deg);
+}
+
+.logoTitle{
+  font-family: 'Oswald', sans-serif;
+  font-size: 9.4rem;
+  color: #f39ac7;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.logoDesc{
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: -3px 0 0 0;
+}
+
+
+/*---ナビ↓---*/
+
+.topNav{
+  padding: 10px;
+  font-family: 'Open sans', sans-serif;
+}
+
+.topNav ul{
+  display: flex;
+  justify-content: center;
+}
+
+.topNav ul li{
+  font-weight: bold;
+  font-size: 1.8rem;
+  padding: 0 20px;
+}
+
+.topNav ul li a{
+  letter-spacing: -0.01rem;
+  transition: all 0.3s ease;
+  color: #333;
+}
+
+.topNav ul li a:hover{
+  opacity: 0.8;
+}
+
+
+/*----------メイン↓----------*/
+
+.contents{
+  padding: 100px 0;
+}
+
+
+/*----------セクション↓----------*/
+
+section{
+  padding: 80px 10px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.worksBoxText{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sectionTitle{
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: -0.01em;
+  display: inline-block;
+  font-size: 5.6rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  color: #f39ac7;
+}
+
+.sectionText{
+  padding: 0;
+}
+
+
+/*---works↓---*/
+
+.worksBoxInner{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.workBoxLeft{
+  width: 48%;
+}
+
+.workBoxLeft img{
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.workBoxRight{
+  width: 48%;
+}
+
+
+/*---history↓---*/
+
+.historyBoxInner{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.historyBox{
+  width: 32%;
+  margin-bottom: 49px;
+}
+
+.historyBox a{
+  transition: all 0.3s ease;
+  margin: 0 0 1px 0;
+  display: block;
+}
+
+.historyBox a:hover{
+  opacity: 0.7;
+}
+
+.historyBox a img{
+  width: 100%;
+}
+
+.historyTitle{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.historyInfo{
+  font-size: 1.2rem;
+}
+
+.historyUrl{
+  font-size: 1.0rem;
+}
+
+
+/*---about↓---*/
+
+.aboutBoxInner{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.aboutBoxLeft{
+  width: 33%;
+}
+
+.aboutBoxLeft img{
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.aboutBoxRight{
+  width: 62%;
+}
+
+
+/*---skill↓---*/
+
+.skillBoxInner{
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.skillBox1{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+}
+
+.skillBox1Left{
+  flex-basis: 75px;
+}
+
+.skillBox1Left img{
+  width: 75px;
+  max-width: 100%;
+}
+
+.skillBox1Right{
+  flex-basis: calc(100% - 75px - 30px);
+}
+
+.skillTitle{
+  margin: 0 0 3px 0;
+  font-size: 100%;
+}
+
+
+/*---星ステータスバー↓---*/
+
+.skillStatus{
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  height: 20px;
+  font-size: 20px;
+}
+
+.skillStatus::before,
+.skillStatus::after{
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+}
+
+.skillStatus::before{
+  color: #ddd;
+}
+
+.skillStatus::after{
+  width: 80px;
+  color: #e8629f;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.length::after{
+  width: 60px;
+}
+
+
+/*-------*/
+
+.skillBoxInnerInner{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 50px 0;
+}
+
+.skillBoxInnerLeft,
+.skillBoxInnerRight{
+  width: 46%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+/*---contact↓---*/
+
+.contactBoxInner{
+  padding: 20px 0;
+}
+
+.contactList{
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contactList li{
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.contactList img{
+  width: 60px;
+  margin: 0 auto 5px;
+  max-width: 100%;
+  display: block;
+}
+
+.contactList span{
+  color: #333;
+  font-weight: bold;
+  display: block;
+}
+
+.contactList li a{
+  display: block;
+}
+
+.contactList li a:hover{
+  opacity: 0.7;
+}
+
+
+/*----------フッター↓----------*/
+
+footer{
+  background: #333;
+}
+
+.footerInner{
+  max-width: 1320px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+  
+}
+
+.footerNav ul{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 30px 0;
+}
+
+.footerNav ul li{
+  font-size: 1.2rem;
+  padding: 0 20px;
+}
+
+.footerNav ul li a{
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.footerNav ul li a:hover{
+  opacity: 0.7;
+}
+
+small{
+  text-align: center;
+  color: #8c8c8c;
+  font-size: 1.0rem;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
